@@ -1,1 +1,7 @@
-node_modules/
+# Todas las carpetas node_modules
+**/node_modules/
+
+# Todos los archivos .log en cualquier profundidad
+**/*.d.ts
+**/*.map
+**/*.yaml
