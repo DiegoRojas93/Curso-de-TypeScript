@@ -1,0 +1,18 @@
+(() => {
+    function showMessage(message) {
+        console.log(message);
+        // No hay instrucción 'return' (o hay un 'return;' vacío)
+    }
+    const showMessage2 = (message) => console.log(message);
+    showMessage("Hola mundo!");
+    // Hola mundo!
+    showMessage2("Hola mundo!");
+    // TypeScript permite que la función devuelva un número, pero se ignorará
+    const enviarEmail = () => {
+        console.log("Hola mundo!");
+        return 100; // Válido en TypeScript, pero el valor de retorno es ignorado por quien llama a la función
+    };
+    enviarEmail();
+    // Hola mundo!
+})();
+export {};
